@@ -1,6 +1,6 @@
 /**
- 机车游侠签到脚本
-
+ 机车游侠签到脚本 执行脚本与获取token脚本二合一
+ 主页下拉刷新获取token和user id
  ^http://api.jcyx2019.com:8080/userIntegral/getUsedIntegral url script-request-header jcyx.js
  */
 
