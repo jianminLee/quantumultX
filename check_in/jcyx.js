@@ -37,8 +37,9 @@ if (is_request) {
         } else {
             $notify(app_name + "签到失败!!!", body.msg, "")
         }
-        $done();
     }, reason => callback(reason.error, null, null))
+     .catch(() => {$notify(app_name + "签到失败!!!", '请求超时', "")})
+     .finally(() => {$done();})
 }
 
 
