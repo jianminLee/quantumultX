@@ -40,6 +40,8 @@ if (is_request) {
     }, reason => callback(reason.error, null, null))
 }
 
+$done();
+
 
 function getToken() {
     if ($request.headers) {
