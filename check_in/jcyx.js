@@ -37,10 +37,9 @@ if (is_request) {
         } else {
             $notify(app_name + "签到失败!!!", body.msg, "")
         }
+        $done();
     }, reason => callback(reason.error, null, null))
 }
-
-$done();
 
 
 function getToken() {
